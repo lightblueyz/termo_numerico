@@ -3,7 +3,7 @@ import os
 
 j = 0  
 
-while j < 100:
+while j < 1:
     os.system('cls')  
     
     num_main = random.randrange(1000, 9999)
@@ -91,9 +91,9 @@ while j < 100:
             print(f"{'='*50}")
             dnv = input("Deseja jogar novamente? (SIM(s) | NÃO(n))")
             if dnv == "s" or dnv == "S":
-                j += 1
+                j = 0
             elif dnv == "n" or dnv == "N":
-                j = 100  
+                j = 1  
             else:
                print("Entrada inválida. Apenas s ou n.")
                dnv = input("Deseja jogar novamente? (SIM(s) | NÃO(n))")
@@ -107,9 +107,9 @@ while j < 100:
             print("=" * 50)
             dnv = input("Deseja jogar novamente? (SIM(s) | NÃO(n))")
             if dnv == "s" or dnv == "S":
-                j += 1 
+                j = 0
             elif dnv == "n" or dnv == "N":
-                j = 100  
+                j = 1
             else:
                 print("Entrada inválida. Apenas s ou n.")
                 dnv = input("Deseja jogar novamente? (SIM(s) | NÃO(n))")
